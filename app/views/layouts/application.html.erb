@@ -13,8 +13,9 @@
   <div class="content"><%= yield %></div>
   <div class="category">
     <h2><%= link_to 'Categories', cattegories_path %></h2>
-    <%= @cattegories.each do |cat| %>
-        <%= link_to cat.name, cattegory_path(cat) %>#x<br>
+
+    <% @cattegories.each do |cat| %>
+        <%= link_to cat.name, cattegory_path(cat) %><br>
     <% end %>
   </div>
 <div>

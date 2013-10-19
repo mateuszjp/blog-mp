@@ -1,20 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<div class="post">
+    <p>
+      <strong>Title:</strong>
+      <%= @post.title %>
+    </p>
 
-<p>
-  <strong>Cattegory:</strong>
-  <%= @post.cattegory_id %>
-</p>
+    <p>
+      <strong>Content:</strong>
+      <%= @post.content %>
+    </p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.content %>
-</p>
+    <%= link_to 'Edit', edit_post_path(@post) %> |
+    <%= link_to 'Back', posts_path %>
+    <span style="float:right"><%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+</div>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
-<span style="float:right"><%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+<p>Komentarze (liczba komentow)</p>
+<div class="comments">
+  <div class="comment">fsdf</div>
+</div>

@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @cattegory.name %>
+  <h1><%= @cattegory.name %></h1>
 </p>
+
+<div class="cattegory_posts">
+    <% @cattegory_posts.each do |p| %>
+        <%= link_to p.title, post_path(p) %> <br>
+    <% end %>
+</div>
 
 <%= link_to 'Edit', edit_cattegory_path(@cattegory) %> |
 <%= link_to 'Back', cattegories_path %>

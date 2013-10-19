@@ -5,38 +5,35 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
-    @cattegories = Cattegory.all
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @cattegories = Cattegory.all
+    #@comments = Comment.all
   end
 
   # GET /posts/new
   def new
     @post = Post.new
-    @cattegories = Cattegory.all
   end
 
   # GET /posts/1/edit
   def edit
-    @cattegories = Cattegory.all
   end
 
   # POST /posts
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-    @cattegories = Cattegory.all
+    #@cattegories = Cattegory.all
 
     respond_to do |format|
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render action: 'show', status: :created, location: @post }
       else
-        format.html { render action: 'new', collection: @cattegories }
+        format.html { render action: 'new' }#, collection: @cattegories }
         format.json { render json: @post.errors, status: :unprocessable_entity }
       end
     end
