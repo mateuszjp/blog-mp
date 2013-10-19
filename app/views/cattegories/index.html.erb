@@ -13,10 +13,8 @@
   <tbody>
     <% @cattegories.each do |cattegory| %>
       <tr>
-        <td><%= cattegory.name %></td>
-        <td><%= link_to 'Show', cattegory %></td>
-        <td><%= link_to 'Edit', edit_cattegory_path(cattegory) %></td>
-        <td><%= link_to 'Destroy', cattegory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><span style="font-size: 20px"><%= link_to cattegory.name, cattegory_path(cattegory) %></span></td>
+        <td style="text-align: right; width: 100%; border-style: inset"><%= link_to 'Destroy', cattegory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
