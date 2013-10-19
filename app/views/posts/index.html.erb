@@ -4,15 +4,10 @@
 
 <% @posts.each do |post| %>
   <div class="post">
-    <h2><%= post.title %></h2>
-    <td><%= post.cattegory.name %></td>
+    <h2><%= link_to post.title, post %></h2>
+    <%= link_to post.cattegory.name, cattegory_path(post.cattegory) %>
     <div class="post_content">
       <%= post.content %>
-    </div>
-    <div>
-      <%= link_to 'Show', post %>|
-      <%= link_to 'Edit', edit_post_path(post) %>|
-      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
     </div>
   </div>
 <% end %>

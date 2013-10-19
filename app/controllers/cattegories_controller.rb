@@ -10,11 +10,13 @@ class CattegoriesController < ApplicationController
   # GET /cattegories/1
   # GET /cattegories/1.json
   def show
+    @cattegories = Cattegory.all
   end
 
   # GET /cattegories/new
   def new
     @cattegory = Cattegory.new
+    @cattegories = Cattegory.all
   end
 
   # GET /cattegories/1/edit
@@ -25,13 +27,14 @@ class CattegoriesController < ApplicationController
   # POST /cattegories.json
   def create
     @cattegory = Cattegory.new(cattegory_params)
+    @cattegories = Cattegory.all
 
     respond_to do |format|
       if @cattegory.save
         format.html { redirect_to @cattegory, notice: 'Cattegory was successfully created.' }
         format.json { render action: 'show', status: :created, location: @cattegory }
       else
-        format.html { render action: 'new' }
+        format.html { render action: 'new', collection: @cattegories }
         format.json { render json: @cattegory.errors, status: :unprocessable_entity }
       end
     end
