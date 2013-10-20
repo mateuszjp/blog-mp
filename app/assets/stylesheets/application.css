@@ -11,7 +11,7 @@
  *= require_self
  *= require_tree .
  */
-
+div{border-radius: 10px}
 div.content{
     float: left;
     width: 700px;

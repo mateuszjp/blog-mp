@@ -1,10 +1,10 @@
 Blog::Application.routes.draw do
 
 
-  resources :cattegories
+  resources :cattegories, except: [:index] #, without: [:index]
 
   resources :posts do
-    resources :comments, only: [:create]
+    resources :comments, only: [:create]#, :index]
   end
 
   root 'posts#index'

@@ -16,7 +16,15 @@
     <span style="float:right"><%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
 </div>
 
-<p>Komentarze (liczba komentow)</p>
-<div class="comments">
-  <div class="comment">fsdf</div>
-</div>
+<p>Komentarze (<%= @comments.count %>)</p>
+<!--<div class="comments">-->
+  <div style="margin: 10px; background-color: aquamarine">
+      <% @comments.each do |c| %>
+          <div class="comment">
+            <h3><%= c.name %></h3>
+            <p><%= c.content %></p>
+          </div>
+        <% end %>
+      <div class="comment_form"><%= render 'comments/form' %></div>
+  </div>
+<!--</div>-->

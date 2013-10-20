@@ -12,7 +12,9 @@
   <h1><%= link_to 'Blog', posts_path %></h1>
   <div class="content"><%= yield %></div>
   <div class="category">
-    <h2><%= link_to 'Kategorie', cattegories_path %></h2>
+    <h2>Kategorie
+      <%#= #link_to 'Kategorie', cattegories_path %>
+    </h2>
 
     <% @cattegories.each do |cat| %>
         <%= link_to cat.name, cattegory_path(cat) %><br>
