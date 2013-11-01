@@ -10,8 +10,9 @@
 
 <div>
   <div>
-    <h1><%= link_to 'Blog', posts_path %></h1>
-    <span><%= link_to 'Zaloguj', new_user_session_path %></span>
+    <h1><%= link_to 'Blog', user_posts_path %></h1>
+    <span><%= current_user.email %></span><br>
+    <span><%= link_to 'Wyloguj', destroy_user_session_path, method: :delete %></span>
   </div>
   <div class="content"><%= yield %></div>
   <div class="category">
@@ -20,7 +21,7 @@
     </h2>
 
     <% @cattegories.each do |cat| %>
-        <%= link_to cat.name, cattegory_path(cat) %><br>
+        <%= link_to cat.name, user_cattegory_path(cat) %><br>
     <% end %>
   </div>
 <div>

@@ -1,9 +1,17 @@
 Blog::Application.routes.draw do
 
+  namespace :user do
+    #resource :posts
+    resources :posts
+    resources :cattegories, only: [:show, :edit]
+    root to: 'posts#index'
+  end
 
-  resources :cattegories, except: [:index] #, without: [:index]
+  devise_for :users
+  #resources :cattegories, except: [:index] #, without: [:index]
+  resources :cattegories, only: [:show]
 
-  resources :posts do
+  resources :posts,only:[:index, :show] do
     resources :comments, only: [:create]#, :index]
   end
 

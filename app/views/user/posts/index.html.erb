@@ -1,0 +1,17 @@
+<h1>WPISY</h1>
+
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <h2><%= link_to post.title, user_post_path(post) %></h2>
+    <%= link_to post.cattegory.name, user_cattegory_path(post.cattegory) %>
+    <div class="post_content">
+      <%= post.content %>
+    </div>
+  </div>
+<% end %>
+
+
+<br>
+
+<%= link_to 'New Post', new_user_post_path %>

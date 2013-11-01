@@ -8,6 +8,8 @@ gem 'rails_12factor'
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: [:production]
 
+gem 'devise'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
