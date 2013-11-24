@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" name="Default" comment="" />
+    <list default="true" id="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+    </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/application.html.erb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1383327486514" ignored="false" />
@@ -14,7 +16,7 @@
     <file path="/Dummy.txt" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385304767443" ignored="false" />
     <file path="/index.html.erb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1383330106708" ignored="false" />
     <file path="/posts.css.scss" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1382277924251" ignored="false" />
-    <file path="/Gemfile" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385309914030" ignored="false" />
+    <file path="/Gemfile" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385311990445" ignored="false" />
     <file path="/database.yml" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1382200231493" ignored="false" />
     <file path="/cattegories_controller.rb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385309263063" ignored="false" />
     <file path="/show.html.erb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1383330320377" ignored="false" />
@@ -29,7 +31,7 @@
     <file path="/user_controller.rb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1383327278904" ignored="false" />
     <file path="/user.html.erb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385308057818" ignored="false" />
     <file path="/create_cattegory_service.rb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385309025012" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385311813343" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385311972283" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
