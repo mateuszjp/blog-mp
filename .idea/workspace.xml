@@ -31,7 +31,7 @@
     <file path="/user_controller.rb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1383327278904" ignored="false" />
     <file path="/user.html.erb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385308057818" ignored="false" />
     <file path="/create_cattegory_service.rb" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385309025012" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385311972283" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="2e3cda74-56ce-4fea-9b0b-6b203f708d9c" time="1385312089909" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +119,7 @@
           <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Gemfile">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="8" selection-start="241" selection-end="241" vertical-scroll-proportion="0.36585367">
+                <state line="3" column="17" selection-start="112" selection-end="112" vertical-scroll-proportion="0.13719513">
                   <folding />
                 </state>
               </provider>
@@ -1227,7 +1227,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="241" selection-end="241" vertical-scroll-proportion="0.36585367">
+        <state line="3" column="17" selection-start="112" selection-end="112" vertical-scroll-proportion="0.13719513">
           <folding />
         </state>
       </provider>
