@@ -3,7 +3,7 @@ Blog::Application.routes.draw do
   namespace :user do
     #resource :posts
     resources :posts
-    resources :cattegories, only: [:show, :edit]
+    resources :cattegories, only: [:show, :edit, :new, :create, :update]
     root to: 'posts#index'
   end
 

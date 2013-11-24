@@ -24,10 +24,15 @@ class User::CattegoriesController < UserController
   # POST /cattegories
   # POST /cattegories.json
   def create
-    @cattegory = Cattegory.new(cattegory_params)
+    @pass
+    @cattegory = CreateCattegoryService.new.tap do |x|
+      x.createCattegory(cattegory_params)
+      #x.createCattegory(params)
+      @pass = x.pass
+    end.cattegory
 
     respond_to do |format|
-      if @cattegory.save
+      if @pass#@cattegory.pass
         format.html { redirect_to @cattegory, notice: 'Cattegory was successfully created.' }
         format.json { render action: 'show', status: :created, location: @cattegory }
       else
@@ -35,6 +40,17 @@ class User::CattegoriesController < UserController
         format.json { render json: @cattegory.errors, status: :unprocessable_entity }
       end
     end
+    #@cattegory = Cattegory.new(cattegory_params)
+    #
+    #respond_to do |format|
+    #  if @cattegory.save
+    #    format.html { redirect_to @cattegory, notice: 'Cattegory was successfully created.' }
+    #    format.json { render action: 'show', status: :created, location: @cattegory }
+    #  else
+    #    format.html { render action: 'new'}
+    #    format.json { render json: @cattegory.errors, status: :unprocessable_entity }
+    #  end
+    #end
   end
 
   # PATCH/PUT /cattegories/1

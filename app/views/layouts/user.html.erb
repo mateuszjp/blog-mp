@@ -23,6 +23,8 @@
     <% @cattegories.each do |cat| %>
         <%= link_to cat.name, user_cattegory_path(cat) %><br>
     <% end %>
+    <br>
+    <%= link_to "Dodaj kateogrie", new_user_cattegory_path %>
   </div>
 <div>
 
